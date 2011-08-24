@@ -1,0 +1,7 @@
+Current maintainers:
+* Neftalí Guerrero (nguerrero) - http://drupal.org/user/370767
+
+Collaborators:
+* Jose Alberto Suarez (Bass)
+* Ruben Teijeiro (rteijeiro) - http://drupal.org/user/780508
+* Lara Garrido 

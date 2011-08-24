@@ -1,0 +1,91 @@
+// Author: Nesta
+
+// Header Top
+
+//#header-top
+  #header-top-wrapper
+    #header-top-inner
+      
+
+// Header
+
+#header
+  #logo-title
+    width: $col4
+    float: left
+    +first
+  a#logo
+    width: 160px
+    height: 100px
+    display: block
+    #name-and-slogan
+      h1
+        text-indent: -9999px
+  ul li
+    display: inline
+    list-style-type: none
+  #header-region
+    width: $col12 + 20px
+    height: 100px
+    float: right
+    background-color: #fff
+    +first
+    +last
+    position: relative
+    #block-menu-menu-redes-sociales
+      position: absolute
+      bottom: 0
+      right: 0
+      ul.menu
+        padding: 0 10px 5px 0
+        margin: 0
+        li
+          margin: 0
+          padding: 0
+          display: inline-block
+          a
+            display: inline-block
+            width: 24px
+            height: 24px
+            text-indent: -9999px
+        li.facebook
+          a
+            background: transparent url(../images/ico-fb.jpg) 0 0 no-repeat
+        li.twitter
+          a
+            background: transparent url(../images/ico-tt.jpg) 0 0 no-repeat
+        li.rss
+          a
+            background: transparent url(../images/ico-rss.jpg) 0 0 no-repeat
+        li.youtube
+          a
+            background: transparent url(../images/ico-yt.jpg) 0 0 no-repeat
+
+div.main-search label
+  display: none
+
+.main-search
+  .block-inner
+    float: right
+    padding: 10px 0 0 0
+    input.form-text
+      background: #e6e6e6 url(../images/ico-lupa.jpg) 5% 50% no-repeat
+      border: 1px solid #b3b3b3
+      border-bottom-color: #d9d9d9
+      border-left-color: #d9d9d9
+      height: 16px
+      padding-left: 20px
+      display: inline-block
+    input.form-submit
+      border: 1px solid #5b5b5b
+      background-color: #5b5b5b
+      height: 18px
+      color: #f2f2f2
+      display: inline-block
+      position: relative
+      padding: 0 2px 3px 0
+      min-width: 60px
+      cursor: pointer
+    
+.webkit .main-search input.form-submit
+  padding: 0 2px

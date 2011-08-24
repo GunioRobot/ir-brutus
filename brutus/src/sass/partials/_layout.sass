@@ -1,0 +1,36 @@
+// Author Nesta
+
+// Grid Parameters
+$col : 40px
+$pad : 10px
+$cols : 16
+
+// Grid Width Calculations
+
+$full : (($pad + $col + $pad) * $cols)
+$col1 : $pad + $col + $pad
+$col2 : $pad + ($col * 2) + $pad
+$col3 : ($pad * 2) + ($col * 3) + ($pad * 2)
+$col4 : ($pad * 3) + ($col * 4) + ($pad * 3)
+$col5 : ($pad * 4) + ($col * 5) + ($pad * 4)
+$col6 : ($pad * 5) + ($col * 6) + ($pad * 5)
+$col7 : ($pad * 6) + ($col * 7) + ($pad * 6)
+$col8 : ($pad * 7) + ($col * 8) + ($pad * 7)
+$col9 : ($pad * 8) + ($col * 9) + ($pad * 8)
+$col10 : ($pad * 9) + ($col * 10) + ($pad * 9)
+$col11 : ($pad * 10) + ($col * 11) + ($pad * 10)
+$col12 : ($pad * 11) + ($col * 12) + ($pad * 11)
+$col13 : ($pad * 12) + ($col * 13) + ($pad * 12)
+$col14 : ($pad * 13) + ($col * 14) + ($pad * 13)
+$col15 : ($pad * 14) + ($col * 15) + ($pad * 14)
+$col16 : ($pad * 15) + ($col * 16) + ($pad * 15)
+
+// Utilites 
+
+@mixin last()
+  margin-right: 0
+
+@mixin first()
+  margin-left: 0
+
+
