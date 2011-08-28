@@ -75,8 +75,11 @@
           <?php endif; ?>
 
           <?php if ($title || $mission || $messages || $help || $tabs): ?>
+          
             <div id="content-header">
-
+              <?php if ($tabs): ?>
+                <div class="tabs"><?php print $tabs; ?></div>
+              <?php endif; ?>
 
               <?php if ($title): ?>
                 <h2 class="title"><?php print $title; ?></h2>
@@ -89,10 +92,6 @@
               <?php print $messages; ?>
 
               <?php print $help; ?> 
-
-              <?php if ($tabs): ?>
-                <div class="tabs"><?php print $tabs; ?></div>
-              <?php endif; ?>
 
             </div> <!-- /#content-header -->
           <?php endif; ?>
