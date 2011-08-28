@@ -8,7 +8,14 @@
     <?php print $picture; ?>
 
     <?php if ($submitted): ?>
-      <span class="submitted"><?php print $submitted; ?></span>
+        <span class="submitted">
+            <?php
+            print format_date($node->created, 'custom', 'l d \d\e F \d\e\ Y');
+            if ($terms) {
+                print ' | in ';
+            }
+            ?>
+        </span>
     <?php endif; ?>
 
     <?php if ($node_top && !$teaser): ?>
