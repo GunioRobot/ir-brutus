@@ -8,6 +8,7 @@
     <!--[if lte IE 6]><style type="text/css" media="all">@import "<?php print $base_path . path_to_theme() ?>/css/ie/ie6.css"</style><![endif]-->
     <!--[if IE 7]><style type="text/css" media="all">@import "<?php print $base_path . path_to_theme() ?>/css/ie/ie7.css"</style><![endif]-->
     <?php print $scripts; ?>
+
   </head>
 
   <body id="<?php print $body_id; ?>" class="<?php print $body_classes; ?>">

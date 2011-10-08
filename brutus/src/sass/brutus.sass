@@ -67,3 +67,31 @@
 
 .inner
   padding: 0
+
+// Admin and create content
+
+.one-sidebar
+  #main
+    #content
+      width: $col11
+      #content-inner
+        #content-area
+          background-color: #fff
+          form
+            padding: 10px
+            fieldset
+              padding: 10px
+              border: 1px solid #dcdcdc
+    #sidebar-first
+      width: $col5
+      +last
+
+body.page-admin
+  #main
+    #content
+      width: $col13
+    #sidebar-first
+      width: $col3
+      +last
+    #content-area
+      padding: 10px
