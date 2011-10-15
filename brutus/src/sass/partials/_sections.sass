@@ -12,9 +12,6 @@
 .not-front .full-node .content li
   margin-top: 1.5em
 
-.full-node
-  margin-bottom: 10em
-
 // Nodos
 
 .full-node
@@ -61,3 +58,32 @@
   .views-row.views-row-last
     margin-right: 0
 
+// Listado de noticias (o similar)
+
+.view-id-listado_noticias
+  .view-content
+    .views-row
+      overflow: hidden
+      padding-bottom: 10px
+      margin-bottom: 10px
+      border-bottom: 1px solid #dcdcdc
+      .views-field-field-image-fid
+        float: left
+        margin: 0 10px 0 0
+
+// Enlace al listado completo de noticias
+
+.noticia-destacada
+  background: #fff url(../images/back-bottom-link.png) bottom left repeat-x
+  .block-inner
+    padding-bottom: 2px
+    .view-content
+      margin-bottom: 14px
+    .view-footer
+      .listado-de-noticias
+        padding-bottom: 5px
+        a
+          color: #ffe400 !important
+          font-family: "UniversCondensedBold"
+          font-size: 1.15em
+          font-weight: normal

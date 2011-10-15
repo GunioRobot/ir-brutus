@@ -64,7 +64,8 @@ a
 .page-admin, .no-sidebars
   #main
     #content
-      width: 100%
+      width: 100% !important
+      margin: 0 !important
 
 ul.primary li a, .menu-name-primary-links li a
   border: 0
@@ -90,7 +91,7 @@ h1, h2, h3, h4, h5, h6
   line-height: .95em
   font-family: 'UniversCondensedBold'
   color: #333
-  font-weight: normal
+  font-weight: normal !important
 
 h1
   font-size: 2.2em
@@ -136,6 +137,16 @@ p
 ul, ol
   margin-left: 0
   padding-left: 2em
+  margin-bottom: 15px
+
+.node-type-noticias
+  .node-inner
+    .content
+      ul
+        li
+          ul
+            li
+              margin-top: 0
 
 // Table styles.
 
@@ -371,9 +382,115 @@ ul.links
 li.views-row-last
   border: none !important
 
-p.submitted
+p.submitted, .field-field-publish-date
   text-align: right
   font: italic 1em "Palatino", "Garamond", "Bookman", "Avant Garde"
+  margin-bottom: 15px
 
-.breadcrumb
-  padding: 15px 0 0 0
+html
+  #page
+    .breadcrumb
+      background: #fff url(../images/top-right-breadcrumb.jpg) top right no-repeat
+      border-radius: 3px
+      -khtml-border-radius: 3px
+      -moz-border-radius: 3px
+      -webkit-border-radius: 3px
+      clear: both
+      margin: 20px 0 0 10px !important
+      overflow: hidden
+      padding: 10px !important
+      width: 920px !important
+
+.admin-menu #content-inner
+  background-color: #fff
+  border-radius: 3px
+  -khtml-border-radius: 3px
+  -moz-border-radius: 3px
+  -webkit-border-radius: 3px
+
+#pid-portada #content-inner
+  background: transparent
+  padding: 0
+  border: none
+  border-radius: 0
+
+// Paginador
+
+ul.pager
+  border-bottom: 1px solid #dcdcdc
+  padding-bottom: 10px
+  li
+    margin: 0 !important
+    padding: 0 !important
+    a
+      display: inline-block
+      background: #dcdcdc
+      padding: 0 5px !important
+      border-radius: 3px
+  li.pager-current
+    display: inline-block
+    background: #5d2067
+    color: #ffe400 !important
+    padding: 0 5px !important
+    border-radius: 3px
+
+// Formulario de creación de contenido
+
+#node-form
+  padding: 0 10px
+  .form-region-main
+    width: 70%
+  .form-region-right
+    width: 28%
+    padding: 10px 0 0 0
+
+#pid-bazar-tricolor
+  #page
+    #main
+      #content
+        width: 100%
+        margin: 0 !important
+        #content-inner
+          #content-area
+            .full-node
+              .item-list
+                ul
+                  margin: 0
+                  padding: 0
+                  overflow: hidden
+                  li
+                    margin: 0
+                    padding: 0 0 10px 0
+                    .views-field-title
+                      text-align: left
+                      padding: 0 10px
+                      h2
+                        font-size: 1.4em
+                        height: 35px
+                        a
+                          color: #fff
+                    .views-field-field-resumen-value
+                      color: #fff
+                      text-align: left
+                      padding: 0 10px
+                    .views-field-view-node
+                      padding: 0 10px
+                      span
+                        a
+                          color: #ffe400
+                    .views-field-field-precio-value
+                      background-color: #ffe400
+                      color: #df0037
+                      text-align: left
+                      padding: 0 10px
+                  li.views-row
+                    width: 160px
+                    display: block
+                    float: left
+                    margin-right: 10px
+                    background-color: #5d2066
+                    text-align: center
+                    border-radius: 3px
+                    -khtml-border-radius: 3px
+                    -moz-border-radius: 3px
+                    -webkit-border-radius: 3px
