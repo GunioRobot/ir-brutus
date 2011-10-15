@@ -13,6 +13,43 @@ body
   color: #64665c
   background: transparent url(../images/background-02.png) 0 0
 
+form
+  padding: 0 0 0 10px
+
+input.form-text, textarea
+  border: 1px solid #b3b3b3
+  border-bottom-color: #d9d9d9
+  border-left-color: #d9d9d9
+  border-radius: 3px
+  -khtml-border-radius: 3px
+  -moz-border-radius: 3px
+  -webkit-border-radius: 3px
+
+input.form-text
+  background-color: #f2f2f2
+  min-height: 20px
+  &:hover, &:focus
+    background-color: #fff
+    border-color: #666
+
+input.form-submit
+  border: 1px solid #cdcdcd
+  border-radius: 3px
+  -khtml-border-radius: 3px
+  -moz-border-radius: 3px
+  -webkit-border-radius: 3px
+  min-height: 20px
+  cursor: pointer
+
+#content input.form-submit
+  padding: 5px 10px
+  margin: 10px 0
+  background-color: #5d2066
+  color: #fff
+
+#content input#edit-delete
+  background-color: red
+
 .block
   border-radius: 3px
   -khtml-border-radius: 3px
@@ -443,6 +480,11 @@ ul.pager
   .form-region-right
     width: 28%
     padding: 10px 0 0 0
+
+.no-sidebars
+  #node-form
+    .form-region-main
+      width: 100%
 
 #pid-bazar-tricolor
   #page
