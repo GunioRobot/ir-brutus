@@ -13,6 +13,9 @@ body
   color: #64665c
   background: transparent url(../images/background-02.png) 0 0
 
+body.cke_show_borders
+  background-image: none !important
+
 form
   padding: 0 0 0 10px
 
@@ -44,11 +47,15 @@ input.form-submit
 #content input.form-submit
   padding: 5px 10px
   margin: 10px 0
-  background-color: #5d2066
-  color: #fff
+  background: transparent url(../images/back-submit-btn.png) 0 0 repeat-x
+  color: #666
+  font-weight: bold
 
 #content input#edit-delete
   background-color: red
+
+#edit-actions
+  border-top: 1px solid #dcdcdc
 
 .block
   border-radius: 3px
@@ -357,12 +364,18 @@ ul.links
               float: right
 
 .front #sidebar-second #sidebar-second-inner .bloque-citas
+  background: #fff url(../images/manuel-azana.jpg) -1px 100% no-repeat
+  height: 245px
+  position: relative
   .item-list
     ul
       li
         margin: 0
         border: none
         div.views-field-name
+          position: absolute
+          left: 10px
+          bottom: 0
           font-style: italic
           font-size: x-small
           text-align: right
@@ -497,42 +510,74 @@ ul.pager
             .full-node
               .item-list
                 ul
+                  text-align: center
                   margin: 0
                   padding: 0
                   overflow: hidden
                   li
                     margin: 0
-                    padding: 0 0 10px 0
+                    padding: 0
                     .views-field-title
-                      text-align: left
                       padding: 0 10px
+                      height: 35px
+                      border-bottom: 1px dashed #dcdcdc
                       h2
-                        font-size: 1.4em
-                        height: 35px
+                        font: 13px/1.1em "Helvetica Neue",helvetica,Arial,Verdana,Geneva,sans-serif
+                        margin: 0
                         a
-                          color: #fff
+                          color: #5d2066
+                          font-weight: bold
+                    .views-field-field-image-cache-fid
+                      margin-top: 10px
+                      .field-content
+                        img
+                          background-color: #ddd
+                          border: 1px solid #eee
+                          border-radius: 3px
+                          -khtml-border-radius: 3px
+                          -moz-border-radius: 3px
+                          -webkit-border-radius: 3px
+                          padding: 5px
                     .views-field-field-resumen-value
                       color: #fff
                       text-align: left
                       padding: 0 10px
                     .views-field-view-node
                       padding: 0 10px
+                      border-top: 1px solid #dcdcdc
+                      border-bottom: 1px solid #dcdcdc
                       span
                         a
-                          color: #ffe400
+                          color: #5d2066
                     .views-field-field-precio-value
                       background-color: #ffe400
                       color: #df0037
                       text-align: left
                       padding: 0 10px
+                    .views-field-sell-price
+                      border-bottom: 1px dashed #dcdcdc
                   li.views-row
-                    width: 160px
-                    display: block
-                    float: left
-                    margin-right: 10px
-                    background-color: #5d2066
+                    width: 200px
+                    height: 265px
+                    display: table-cell
+                    background-color: #fff
                     text-align: center
-                    border-radius: 3px
-                    -khtml-border-radius: 3px
-                    -moz-border-radius: 3px
-                    -webkit-border-radius: 3px
+                    border-right: 1px solid #dcdcdc
+                    border-top: 1px solid #dcdcdc
+                  li.views-row-first
+                    border-left: 1px solid #dcdcdc
+                  li.views-row-last
+                    border-right: 1px solid #dcdcdc !important
+                    border-top: 1px solid #DCDCDC !important
+
+.block-inner
+  h3.block-title
+    margin-top: 0
+  .content
+    form
+      padding: 0
+      div
+        input.form-submit
+          background-color: #5d2067
+          color: #fff
+          padding: 5px 10px

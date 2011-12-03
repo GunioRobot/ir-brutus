@@ -37,33 +37,36 @@
     +last
     position: relative
     #block-menu-menu-redes-sociales
-      position: absolute
-      bottom: 0
-      right: 0
-      ul.menu
-        padding: 0 10px 5px 0
-        margin: 0
-        li
+      margin-left: 30px
+      .block-inner
+        padding: 0
+        margin: 9px 0 0 0
+        ul.menu
           margin: 0
           padding: 0
-          display: inline-block
-          a
+          display: block
+          float: right
+          li
+            margin: 0
+            padding: 0
             display: inline-block
-            width: 24px
-            height: 24px
-            text-indent: -9999px
-        li.facebook
-          a
-            background: transparent url(../images/ico-fb.jpg) 0 0 no-repeat
-        li.twitter
-          a
-            background: transparent url(../images/ico-tt.jpg) 0 0 no-repeat
-        li.rss
-          a
-            background: transparent url(../images/ico-rss.jpg) 0 0 no-repeat
-        li.youtube
-          a
-            background: transparent url(../images/ico-yt.jpg) 0 0 no-repeat
+            a
+              display: inline-block
+              width: 24px
+              height: 24px
+              text-indent: -9999px
+          li.facebook
+            a
+              background: transparent url(../images/ico-fb.jpg) 0 0 no-repeat
+          li.twitter
+            a
+              background: transparent url(../images/ico-tt.jpg) 0 0 no-repeat
+          li.rss
+            a
+              background: transparent url(../images/ico-rss.jpg) 0 0 no-repeat
+          li.youtube
+            a
+              background: transparent url(../images/ico-yt.jpg) 0 0 no-repeat
 
 div.main-search label
   display: none
@@ -71,9 +74,11 @@ div.main-search label
 #header
   #header-region
     .main-search
+      float: right
       .block-inner
         float: right
         padding: 10px 0 0 0
+        margin-right: 10px
         input.form-text
           background: #e6e6e6 url(../images/ico-lupa.jpg) 5% 50% no-repeat
           border: 1px solid #b3b3b3
